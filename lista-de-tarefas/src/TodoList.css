@@ -155,7 +155,7 @@ img {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (max-width: 600) {
     form {
         width: 100%;
         font-size: 50px;
@@ -165,9 +165,9 @@ img {
     }
 }
 
-@media screen and (max-width: 550px) {
-    h1 {
-        text-align: center;
+@media screen and (max-width: 600px) and (max-width: 768) {
+    body {
+        font-size: 18px;
     }
     form {
         margin: auto;
@@ -176,7 +176,7 @@ img {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (max-width: 400px) {
     h1 {
         text-align: center;
         margin-left: 167px;
