@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+
+*:focus {
+    outline: none;
+}
+body {
+    background: #13061a;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 35px;
+    margin: 60px auto;
+    margin-bottom: 60px;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Ajuste para altura do form */
+    background: #2d3046;
+    border: none;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: relative; /* Adicionado */
+    top: 0;
+    right: 0;
+    background: #363b65;
+    height: 110%; /* Ajuste para altura do form */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn:hover {
+    color: #2f004b;
+    background: #7d83b9;
+    transition: .5s;
+}
+
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #363b65;
+    background: #2d3046;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item:hover{
+    background: #7d83b9;
+    color: #2d3046;
+    transition: .5s;
+}
+
+.item-completo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6d6c6c;
+    background: #2d3046;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.item-completo span {
+    width: 100%;
+    color: #8d8a8a;
+    text-decoration: line-through;
+}
+
+button.btn-deletar {
+    background: none;
+    border: none;
+    color: #6d6c6c;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button.btn-deletar:hover {
+    color: #fff;
+    background: #ff004c;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button.deleteAll {
+    border: 1px solid #ff004c;
+    background: none;
+    margin-left: 229px;
+    margin-right: 160px;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    color: #ff004c;
+    font-weight: 600;
+}
+
+
+button.deleteAll:hover {
+    background: #ff004c;
+    transition: .8s;
+    color: #fff;
+}
+
+
+img {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 14px 3px;
+    border: 3px solid #13061a;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 900px) {
+    form {
+        width: 100%;
+        font-size: 50px;
+    }
+    .listadeTarefas {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        text-align: center;
+    }
+    form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        text-align: center;
+        margin-left: 167px;
+    
+    }
+    form {
+        text-align: center;
+        margin-left: 90px;
+    }
+}
